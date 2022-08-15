@@ -1,6 +1,6 @@
 import React from 'react'
 import './BoardBar.scss'
-import { Col, Row, Container as ContainerBootStrap, InputGroup, Form } from 'react-bootstrap'
+import { Col, Row, Container as ContainerBootStrap } from 'react-bootstrap'
 
 function BoardBar() {
     return (

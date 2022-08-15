@@ -68,7 +68,7 @@ function BoardContent() {
             id: Math.random().toString(36).substr(2, 5),
             boardId: board.id,
             title: newColumnTitle.trim(),
-            cardOder: [],
+            cardOrder: [],
             cards: []
         }
         let newColumns = [...columns]
