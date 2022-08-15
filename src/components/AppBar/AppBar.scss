@@ -1,0 +1,98 @@
+@import '__setting.scss';
+.navbar-app {
+    color: white;
+    height: $navbar-app-height;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #335C71;
+    font-size: 1.5rem;
+    .container-bootstrap{
+      max-width: 100%;
+      .app-actions{
+        display: inline-flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        .item{
+          padding: 4px 8px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 3px;
+          &:not(:first-child){
+            margin-left: 8px;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.4);
+
+          }
+          &.home{
+            i {
+              font-size: 24px;
+            }
+          }
+          &.search{
+            padding: 6px 0;
+            .groupSearch{
+                height: 19px;
+                .inputSearch{
+                    max-height: 100%;
+                    background-color: inherit;
+                    color: inherit;
+                    border: none;
+                    font-size: 14px;
+                    &::placeholder{
+                      color: darken($color: (aliceblue), $amount: 5);
+                      opacity: 1;
+                    }
+                    
+                }
+                .input-icon-search{
+                  padding: 0 8px 0 0;
+                  background-color: transparent;
+                  border: none;
+                  color: inherit;
+                }
+            }
+          }
+        }
+      }
+      .app-branding{
+        padding-top: 5px;
+
+        span{
+          font-weight: bold;
+          font-size: 30px;
+        }
+      }
+      .user-actions{
+        display: inline-flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        .item{
+          padding: 4px 8px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 3px;
+          &:not(:first-child){
+            margin-left: 8px;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.4);
+          }
+          &.user-avatar{
+            padding: 0;
+            background-color: transparent;
+            img{
+              width: 30px;
+              height: 30px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+          }
+      }
+    }
+  }
+}

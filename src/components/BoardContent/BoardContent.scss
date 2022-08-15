@@ -1,0 +1,53 @@
+@import '__setting.scss';
+
+.board-content{
+    height: $board-content-height;
+    display: flex;
+    overflow-x: auto;
+    // overflow-y: hidden;
+    margin: 0 $gap $gap;
+    &::-webkit-scrollbar{
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:horizontal{
+      height: 11px;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: rgba(255,255,255,0.24);
+      border-radius: 5px;
+    }
+    .column-drop-preview {
+      background-color: rgba(150, 150, 200, 0.1);
+      border: 1px dashed #abc;
+      margin: 5px 45px 5px 5px;
+    }
+    .addNewColumn{
+      width: 250px;
+      max-width: 250px;
+      font-size: 15px;
+      line-height: 32px;
+      color: white;
+      margin-left: $gap;
+      padding: 4px 0 4px 15px;
+      border-radius: $column-border-radius;
+      background-color: hsla(0, 0%, 100%, .30);
+      &:hover{
+        background-color: hsla(0, 0%, 100%, .50);
+        cursor: pointer;
+      }
+    }
+    .enterNewColumn{
+      width: 250px;
+      max-width: 250px;
+      background-color: #ebecf0;
+      padding: 4px 10px;
+      line-height: 32px;
+      margin-left: $gap;
+      border-radius: $column-border-radius;
+      .inputNewColumn{
+        margin: 5px 0;
+
+      }
+
+    }
+}

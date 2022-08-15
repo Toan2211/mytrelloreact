@@ -1,0 +1,63 @@
+@import '__setting.scss';
+
+.navbar-board{
+    color: white;
+    height: $navbar-board-height;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    .container-bootstrap{
+      max-width: 100%;
+      .board-info{
+        display: inline-flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+      }
+      .item{
+        padding: 4px 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 3px;
+        &:not(:first-child){
+          margin-left: 8px;
+        }
+        &:hover{
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.4);
+
+        }
+        &.member-avatar{
+          padding: 0;
+          background-color: transparent;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          >* {
+            margin-right: 4px;
+          }
+          img{
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          span{
+            padding: 3px 6px;
+            background-color: rgba(255, 255, 255, 0.3);
+            &:hover{
+              background-color: rgba(255, 255, 255, 0.4);
+            }
+            &.more-mem{
+              border-radius: 50%;
+
+            }
+            &.invite{
+              margin-left: 10px;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
